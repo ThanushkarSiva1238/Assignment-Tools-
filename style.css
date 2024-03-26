@@ -1,0 +1,524 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    appearance: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html,
+body {
+    user-select: none;
+    position: relative;
+    background: #eeeded;
+    font-family: "poppins";
+    width: 100%;
+}
+
+body {
+    background: #eee;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: .7rem 1rem;
+}
+header .title{
+    display: flex;
+}
+header .title h2, h3{
+    font-size: 24px;
+}
+.title h3{
+    display: none;
+}
+header nav{
+    z-index: 99;
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    animation: navi 2s ease-in-out;
+}
+header nav ul{
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+}
+ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+li a{
+    color: #302d2d;
+}
+li a:hover{
+    color: #1328e2;
+}
+@keyframes navi{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+
+.checkbtn{
+    font-size: 32px;
+    color: #302d2d;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn:hover{
+    color: #1328e2;
+}
+
+#check{
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Tool - 01 */
+.tool1{
+    background: #b9b8b8a6;
+    padding: .5rem 1rem;
+    height: 430px;
+}
+.tool1 h1{
+    padding-bottom: .5rem;
+    font-size: 24px;
+}
+.tool1 .mySwiper1 {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.mySwiper1 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 21rem;
+    padding: 2rem .5rem;
+    background: #eeeded;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .25rem;
+    border-radius: 10px;
+}
+
+.mySwiper1 .swiper-slide img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.mySwiper1 .swiper-slide label{
+    font-weight: 700;
+    font-size: 18px;
+}
+.mySwiper1 .swiper-slide p{
+    font-size: 13px;
+    text-align: center;
+    height: 6.5rem;
+}
+.mySwiper1 .swiper-slide a{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #2177FB;
+    color: #fff;
+}
+.mySwiper1 .swiper-pagination1{
+    text-align: center;
+    margin-top: .7rem;
+}
+
+/* Tool - 02 */
+.tool2{
+    background: #b9b8b8a6;
+    padding: .5rem 1rem;
+    height: 430px;
+}
+.tool2 h1{
+    padding-bottom: .5rem;
+    font-size: 24px;
+}
+.swiper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slide{
+    width: 90%;
+    overflow: hidden;
+}
+.slide .swiper-slide {
+    height: 21rem;
+    padding: 2rem;
+    background: #eeeded;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 10px;
+}
+.swiper-slide img {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.swiper-slide .select{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.swiper-slide label{
+    font-weight: 700;
+    font-size: 28px;
+}
+.swiper-slide p{
+    font-size: 15px;
+}
+.swiper-slide a{
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    width: 15rem;
+    height: 2.5rem;
+    background-color: #2177FB;
+    color: #fff;
+}
+.swiper-slide a:hover{
+    background: #fff;
+    color: #2177FB;
+    border: 2px solid #2177FB;
+}
+.tool2 .swiper-pagination{
+    position: relative;
+    top: 12px;
+}
+
+
+/* Tool - 03 */
+.tool3{
+    background: #b9b8b8a6;
+    padding: .5rem 1rem;
+    height: 430px;
+}
+.tool3 h1{
+    padding-bottom: .5rem;
+    font-size: 24px;
+}
+.tool3 .swiper {
+    margin-top: 2rem;
+    width: 500px;
+    height: 320px;
+}
+
+.mySwiper2 .swiper-slide {
+    background-position: center;
+    padding: 2rem 1rem;
+    background: #eeeded;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    border-radius: 10px;
+
+}
+.mySwiper2 .swiper-slide img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.mySwiper2 .swiper-slide label{
+    font-weight: 700;
+    font-size: 18px;
+}
+.mySwiper2 .swiper-slide p{
+    font-size: 13px;
+    text-align: center;
+    height: 10rem;
+}
+.mySwiper2 .swiper-slide a{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    width: 8rem;
+    height: 4rem;
+    background-color: #2177FB;
+    color: #fff;
+    border: none;
+    margin: 0;
+}
+.mySwiper2 .swiper-pagination2{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer{
+    height: 6rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+footer label{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 600;
+    color: #1328e2;
+}
+footer .contect{
+    position: absolute;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    right: 1rem;
+    gap: 1rem;
+}
+.contect p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.contect .click a{
+    color: #000;
+}
+.contect .click a:hover{
+    color: #868585;
+}
+
+
+/* Media */
+@media (max-width: 1200px){
+    body{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .checkbtn{
+        display: block;
+        color: #302d2d;
+    }
+    header nav{
+        animation: none;
+    }
+    ul{
+        z-index: 99;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #eeeded;
+        top: 57px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 2rem;
+        padding: 10px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li:hover{
+        border-bottom: 3px solid #1328e2;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        z-index: 1;
+    }
+    #check:checked ~ .checkbtn{
+        color: #1328e2;
+    }
+}
+
+@media (max-width: 890px){
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        background-color: #eeeded;
+    }
+
+    .tool2{
+        padding: .5rem 1rem;
+        height: 340px;
+    }
+    .tool2 h1{
+        padding-bottom: .5rem;
+        font-size: 24px;
+    }
+    .slide{
+        width: 85%;
+    }
+    .slide .swiper-slide {
+        height: 15rem;
+        padding: 2rem;
+    }
+    .swiper-slide img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .swiper-slide .select{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        width: 100%;
+    }
+    .swiper-slide label{
+        text-align: center;
+    }
+    .swiper-slide .select p{
+        display: none;
+    }
+    .swiper-slide a{
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1rem 0 1.5rem;
+    }
+    footer .contect{
+        position: static;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .contect p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+@media (max-width: 570px){
+    .slide{
+        width: 82%;
+    }
+    .swiper-slide img {
+        width: 9rem;
+        height: 9rem;
+    }
+    .swiper-slide label{
+        text-align: center;
+        font-size: 24px;
+    }
+}
+@media (max-width: 540px){
+    .title h2{
+        display: none;
+    }
+    .title h3{
+        display: block;
+    }
+    .tool1 h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .tool2{
+        padding: .5rem 1rem;
+        height: 430px;
+    }
+    .tool2 h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .slide{
+        width: 300px;
+    }
+    .slide .swiper-slide {
+        height: 21rem;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .swiper-slide img {
+        width: 9rem;
+        height: 9rem;
+    }
+    .swiper-slide .select{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        width: 100%;
+    }
+    .swiper-slide label{
+        font-size: 20px;
+        height: 3rem;
+    }
+    .swiper-slide a{
+        width: 90%;
+    }
+
+    .tool3{
+        height: 450px;
+    }
+    .tool3 h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .tool3 .swiper {
+        margin-top: 2rem;
+        width: 300px;
+        height: 340px;
+    }
+    footer{
+        height: 9rem;
+    }
+    footer .contect{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+@media (max-width: 540px){
+    .tool2 #sec .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+    .tool3{
+        height: 485px;
+    }
+}
